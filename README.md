@@ -1,6 +1,6 @@
 # Simple Shell
 ___
-[alt text!](https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/108598911/original/5518342da48d1281b7648d0dbbc14cc4b6b56d49/make-shell-scripts-to-accomplish-your-linux-unix-tasks.png)
+[alt text](https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/108598911/original/5518342da48d1281b7648d0dbbc14cc4b6b56d49/make-shell-scripts-to-accomplish-your-linux-unix-tasks.png)
 
 
 ## objective
