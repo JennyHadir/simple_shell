@@ -1,0 +1,41 @@
+.TH SIMPLE_SHELL "1" "14 November 2019" "Simple Shell Manual Page"
+
+.SH NAME
+.B simple_shell - shl
+ Command language interpreter.
+.SH SYNOPSIS
+.B ./shl
+.SH DESCRIPTION
+This is the computer program that provides a user interface to access the operating system, its a command language interpreter to execute commands read from standard input. The First Unix shell was written by Ken Thompson.
+.SH OVERVIEW
+Read lines either from a file or terminal, shell interprets and execute commands. Commands can be typed directly to the shell or piped in.
+.SH INOVOCATION
+To run the shell you need to compile all the .c files using GNU Compiler as example :
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o shl
+.P
+.RE
+shl is the file to execute
+.RS
+.B $ ./shl
+.P
+.RE
+Simple shell can be run in interactive mode by typing the below command followed by enter, once you execute it, a prompt ($) will appear and you will be able to enter your commands.
+It can be run in non-interactive mode also, using the piping (|) for example:
+.P
+.RS
+.B echo 'ls' | ./shl
+.SH BUILTIN COMMANDS
+
+.SH EXIT STATUS
+
+.SH ENVIRONMENT
+
+.SH SEE ALSO
+
+.SH BUGS
+
+.SH AUTHORS
+Jenni Hadir <hadirjenni@gmail.com>
+Hrairi Majdi <>
