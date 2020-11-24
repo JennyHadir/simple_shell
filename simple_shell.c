@@ -1,4 +1,17 @@
 #include "shell.h"
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+/**
+ *
+ *
+ *
+ */
+void handle_signal(__attribute__((unused))int n )
+{
+write(STDIN_FILENO, "\n#CisFun$ ", 9);
+}
 /**
  * main - main function of shell building
  *@ac: number of argument
@@ -7,22 +20,28 @@
  */
 int main(__attribute__((unused)) int ac, char **av)
 {
-   char *buff, *fpath;
-   char **arg;
-   int rexec, tokens = 0;
-   int *num = &tokens;
-   while (1)
-     {
-       if (isatty(STDIN_FILENO))
-	 write(STDOUT_FILENO, "#CisFun$ ", 9);
-       buff = get_buff();
-       if (buff != NULL)
-	 break;
-       arg = split_buff(buff, num);
-       if (arg != NULL)
-	 break;
-       fpath = find_path(environ, arg);
-       rexec = execute(arg, av[0], environ, fpath, buff)
+char *buff = NULL, *fpath = NULL;
+char **arg = NULL;
+int tokens = 0;
+int *nb = &tokens;
+char **environ;
+signal(SIGINT, handle_signal);
+while (1)
+{
+if (isatty(STDIN_FILENO))
+write(STDOUT_FILENO, "#CisFun$ ", 9);
+buff = read_buff();
+if (buff == NULL)
+continue;
+arg = parse_buff(buff, nb);
+if (arg == NULL)
+{
+free(buff);
+free(arg);
+continue;
+}
+fpath = find_path(environ, arg);
+execute(arg, av[0], environ, fpath, buff);
 }
 return (0);
 }
