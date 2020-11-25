@@ -65,18 +65,17 @@ ___
 ## Files
 ___
 ### Mandatory
-[0-README.md, man, AUTHORS]()
 - [README.md](https://github.com/JennyHadir/simple_shell/blob/master/README.md)
 - [man_1_simple_shell](https://github.com/JennyHadir/simple_shell/blob/master/man_1_simple_shell)
 - [AUTHORS](https://github.com/JennyHadir/simple_shell/blob/master/AUTHORS)
 
-[simple_shell.c](https://github.com/JennyHadir/simple_shell/blob/master/simple_shell.c) : main function of a micro shell that contain 3 function read, parse line and execute it
+- [simple_shell.c](https://github.com/JennyHadir/simple_shell/blob/master/simple_shell.c) : main function of a micro shell that contain 3 function read, parse line and execute it
 
-[read_buff.c](https://github.com/JennyHadir/simple_shell/blob/master/read_buff.c) : read the command line typed by the user
+- [read_buff.c](https://github.com/JennyHadir/simple_shell/blob/master/read_buff.c) : read the command line typed by the user
 
-[parse_buff.c](https://github.com/JennyHadir/simple_shell/blob/master/parse_buff.c) : split the command line typed by the user to a command and argument
+- [parse_buff.c](https://github.com/JennyHadir/simple_shell/blob/master/parse_buff.c) : split the command line typed by the user to a command and argument
 
-[execute.c](https://github.com/JennyHadir/simple_shell/blob/master/execute.c) : execute the command line
+- [execute.c](https://github.com/JennyHadir/simple_shell/blob/master/execute.c) : execute the command line
 [shell.h](https://github.com/JennyHadir/simple_shell/blob/master/shell.h) : Header that contain all function used in this program
 
-[strfunc.c](https://github.com/JennyHadir/simple_shell/blob/master/strfunc.c) : strfunc contain some string function used in the parse_buff function
+- [strfunc.c](https://github.com/JennyHadir/simple_shell/blob/master/strfunc.c) : strfunc contain some string function used in the parse_buff function
