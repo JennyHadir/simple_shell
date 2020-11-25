@@ -11,12 +11,12 @@
 void execute(char **av, char *command)
 {
 pid_t child_pid;
-char * argv[] = {av[0], command, NULL}
+char *argv[] = {av[0], command, NULL};
 int status;
 child_pid = fork();
 if (child_pid == 0)
 {
-if (execve(argv[0], argv , NULL) == -1)
+if (execve(argv[0], argv, NULL) == -1)
 {
 perror("Error:");
 write(1, "\n#cisfun ", 11);

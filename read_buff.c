@@ -21,7 +21,7 @@ return (start);
 }
 else
 {
-perror("Error:")
+perror("Error:");
 return (start);
 }
 }

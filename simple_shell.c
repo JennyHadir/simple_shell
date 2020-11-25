@@ -12,7 +12,7 @@
  */
 int main(int ac, char **av)
 {
-char * command = NULL;
+char *command = NULL;
 int start = NULL;
 signal(SIGINT, SIG_IGN);
 start = read_buff(av, ac);
