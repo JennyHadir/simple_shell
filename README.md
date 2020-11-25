@@ -75,6 +75,7 @@ ___
 - [parse_buff.c](https://github.com/JennyHadir/simple_shell/blob/master/parse_buff.c) : split the command line typed by the user to a command and argument
 
 - [execute.c](https://github.com/JennyHadir/simple_shell/blob/master/execute.c) : execute the command line
-[shell.h](https://github.com/JennyHadir/simple_shell/blob/master/shell.h) : Header that contain all function used in this program
+
+- [shell.h](https://github.com/JennyHadir/simple_shell/blob/master/shell.h) : Header that contain all function used in this program
 
 - [strfunc.c](https://github.com/JennyHadir/simple_shell/blob/master/strfunc.c) : strfunc contain some string function used in the parse_buff function
