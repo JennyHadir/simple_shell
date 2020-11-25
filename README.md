@@ -63,7 +63,6 @@ ___
 - write (man 2 write)
 
 ## Files
-___
 ### Mandatory
 - [README.md](https://github.com/JennyHadir/simple_shell/blob/master/README.md)
 - [man_1_simple_shell](https://github.com/JennyHadir/simple_shell/blob/master/man_1_simple_shell)
