@@ -1,4 +1,3 @@
-#include "shell.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -11,10 +10,12 @@
  */
 int read_buff(int ac, char **av)
 {
-int start = NULL;
+size_t s = 0;
+char *buff = NULL;
+int start;
 if (isatty(STDIN_FILENO))
 write(1, "\n#cisfun$ ", 11);
-if (getline(&av[1], &ac, stdin) != EOF)
+if (getline(&buff, &s, stdin) != EOF)
 {
 start = 1;
 return (start);

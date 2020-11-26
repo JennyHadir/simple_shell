@@ -21,7 +21,7 @@ return (len);
  *@j: counter of second string
  *Return: second string
  */
-char *_strcpy(char **av, char *command, int i, int j)
+char *_strcpy(char *command, char **av, int i, int j)
 {
 for (; av[i][1]; i++)
 {

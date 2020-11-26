@@ -13,16 +13,17 @@
 int main(int ac, char **av)
 {
 char *command = NULL;
-int start = NULL;
+int start;
 signal(SIGINT, SIG_IGN);
-start = read_buff(av, ac);
+do {
+start = read_buff(ac, av);
 if (start == 1)
 {
-command = parse_buff(av);
-if (command != NULL)
-execute(av, command);
+parse_buff(av);
+execute(av);
 return (0);
 }
 perror("Error");
-return (0);
+} while (1);
+return (1);
 }
