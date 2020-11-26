@@ -1,4 +1,4 @@
-.TH SIMPLE_SHELL "1" "14 November 2019" "Simple Shell Manual Page"
+.TH SIMPLE_SHELL "1" "25 November 2020" "Simple Shell Manual Page"
 
 .SH NAME
 .B simple_shell - shl
@@ -27,15 +27,12 @@ It can be run in non-interactive mode also, using the piping (|) for example:
 .RS
 .B echo 'ls' | ./shl
 .SH BUILTIN COMMANDS
-
+Handle EOF (end of a file or CTRL+C)
 .SH EXIT STATUS
-
-.SH ENVIRONMENT
-
+Return 0 or an error message or the command exit status
 .SH SEE ALSO
-
+bash(1)
 .SH BUGS
-
+No bugs
 .SH AUTHORS
 Jenni Hadir <hadirjenni@gmail.com>
-Hrairi Majdi <>
