@@ -10,13 +10,14 @@
  */
 void execute(char **av)
 {
-char *envp[] = {"PATH = /bin", NULL};
+char *envp[] = {"PATH = /bin/", NULL};
 char *argv[] = {av[1], NULL};
 pid_t child_pid;
 int status;
 child_pid = fork();
 if (child_pid == 0)
 {
+exit_built(av, argv, envp);
 if (execve(argv[0], argv, envp) == -1)
 {
 perror("Error:");
