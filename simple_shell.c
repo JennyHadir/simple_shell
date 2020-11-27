@@ -12,7 +12,6 @@
  */
 int main(int ac, char **av)
 {
-char *command = NULL;
 int start;
 signal(SIGINT, SIG_IGN);
 do {
